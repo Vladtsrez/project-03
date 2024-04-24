@@ -9,8 +9,13 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 
+    @font-face {
+      font-family: Inter Tight;
+      src: url(./../font/InterTight-VariableFont_wght.ttf);
+    }
+
 :root {
-  font-family: "Inter Tight", sans-serif;
+  font-family: Inter Tight;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
