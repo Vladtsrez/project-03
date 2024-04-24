@@ -1,3 +1,5 @@
+@import url('./component.css');
+
 @import url('./reset.css');
 @import url('./about-me.css');
 @import url('./hero.css');
@@ -9,19 +11,18 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 
-    @font-face {
-      font-family: Inter Tight;
-      src: url(./../font/InterTight-VariableFont_wght.ttf);
-    }
+
+@font-face {
+  font-family: Inter Tight;
+  src: url(./../font/InterTight-VariableFont_wght.ttf);
+}
 
 :root {
-  font-family: Inter Tight;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 
-  color: #FAFAFA;
-  background-color: #1C1D20;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
