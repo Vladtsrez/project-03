@@ -9,9 +9,22 @@
   margin-bottom: 32px;
 }
 
+/*  */
+
+.project-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
 .project-cards-item {
   max-width: 343px;
+
+  flex: 0 0 auto;
+  margin-right: 20px;
 }
+
+/*  */
 
 .card-info {
   background-color: #fafafa;
