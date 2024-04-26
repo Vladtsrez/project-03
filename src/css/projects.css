@@ -1,5 +1,10 @@
 /* =============== mobile ================ */
 
+.projects-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .projects-heading {
   color: rgb(250, 250, 250, 40%);
   text-transform: uppercase;
@@ -8,8 +13,6 @@
   letter-spacing: -0.02em;
   margin-bottom: 32px;
 }
-
-/*  */
 
 .project-cards {
   display: flex;
@@ -24,22 +27,20 @@
   margin-right: 20px;
 }
 
-/*  */
-
-.card-info {
+.projects-card-info {
   background-color: #fafafa;
   border-radius: 24px 24px 0 0;
   padding: 32px;
 }
 
-.tech-skills {
+.projects-card-tech-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 96px;
 }
 
-.tech-skills-item {
+.projects-card-tech-skills-item {
   color: #1c1d20;
   letter-spacing: -0.02em;
   border: 1px solid rgb(28, 29, 32, 20%);
@@ -52,7 +53,7 @@
   align-items: center;
 }
 
-.card-info-text {
+.projects-card-info-text {
   color: #1c1d20;
   font-size: 24px;
   line-height: 1.17;
@@ -60,7 +61,7 @@
   margin-bottom: 32px;
 }
 
-.see-project-link {
+.projects-card-see-project-link {
   display: inline-block;
   letter-spacing: -0.02em;
   background-color: #ed3b44;
@@ -74,12 +75,12 @@
   transition: background-color 250ms linear;
 }
 
-.see-project-link:hover,
-.see-project-link:focus {
+.projects-card-see-project-link:hover,
+.projects-card-see-project-link:focus {
   background-color: #e0373f;
 }
 
-.card-image-container {
+.projects-card-image-container {
   max-width: 343px;
   background-color: #242527;
   border-radius: 0 0 24px 24px;
@@ -92,6 +93,11 @@
 /* =============== tablet ================ */
 
 @media screen and (min-width: 768px) {
+  .projects-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   .project-cards {
     width: 704px;
   }
@@ -100,31 +106,31 @@
     max-width: 704px;
   }
 
-  .card-info {
+  .projects-card-info {
     padding: 64px;
   }
 
-  .tech-skills {
+  .projects-card-tech-skills {
     margin-bottom: 164px;
   }
 
-  .tech-skills-item {
+  .projects-card-tech-skills-item {
     padding: 18px;
     height: 55px;
   }
 
-  .card-info-text {
+  .projects-card-info-text {
     width: 494px;
     font-size: 44px;
     line-height: 1;
   }
 
-  .see-project-link {
+  .projects-card-see-project-link {
     width: 177px;
     height: 55px;
   }
 
-  .card-image-container {
+  .projects-card-image-container {
     max-width: 704px;
     padding: 120px 45px;
   }
@@ -135,6 +141,11 @@
 /* =============== desktop ================ */
 
 @media screen and (min-width: 1440px) {
+  .projects-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
   .project-cards {
     width: 1376px;
   }
@@ -144,16 +155,16 @@
     display: flex;
   }
 
-  .card-info {
+  .projects-card-info {
     width: 688px;
     border-radius: 24px 0 0 24px;
   }
 
-  .tech-skills {
+  .projects-card-tech-skills {
     margin-bottom: 223px;
   }
 
-  .card-image-container {
+  .projects-card-image-container {
     border-radius: 0 24px 24px 0;
     padding: 120px 37px;
   }
