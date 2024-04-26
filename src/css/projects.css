@@ -71,6 +71,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms linear;
+}
+
+.see-project-link:hover,
+.see-project-link:focus {
+  background-color: #e0373f;
 }
 
 .card-image-container {
