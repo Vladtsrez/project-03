@@ -1,7 +1,8 @@
 .header {
   position: absolute;
-    top: 32px;
-    width: 100%;
+}
+.header-container {
+  padding-top: 32px;
 }
 .nav-menu {
   display: flex;
