@@ -12,7 +12,6 @@ const swiper = new Swiper('.swiper', {
     },
     direction: 'horizontal',
 });
-console.log(swiper);
 
 const review = document.querySelector('.reviews-list'); 
 
@@ -30,7 +29,6 @@ async function fetchReviews() {
 
 async function renderReviews() {
     const data = await fetchReviews();
-    console.log(data);
     review.innerHTML = '';
     const reviewElements = data.map(reviews => {
         return `
