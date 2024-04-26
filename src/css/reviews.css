@@ -1,0 +1,110 @@
+@import url('./reset.css');
+
+.visually-hidden{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+}
+
+.title-review {
+    color: rgba(250, 250, 250, 0.4);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    margin: 32px 0px;
+}
+
+.reviews-photo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 32px;
+}
+
+.reviews-list {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    gap: 16px;
+}
+
+.reviews-item {
+    padding: 32px 24px;
+    box-sizing: border-box;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 20px;
+        /* width: 344px; */
+        height: 302px;
+}
+
+
+
+.author-name {
+    /* Mobile/H5 */
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.author-review {
+    /* Mobile/Main text */
+    color: rgba(250, 250, 250, 0.6);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-btn {
+
+}
+
+.right-btn {
+    /* arrow */
+    position: static;
+    width: 52px;
+    height: 52px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 12px;
+    transform: rotate(180.00deg);
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+}
+
+
