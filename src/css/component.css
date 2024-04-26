@@ -1,8 +1,41 @@
+@font-face {
+  font-family: Inter Tight;
+  src: url(./../font/InterTight-VariableFont_wght.ttf);
+}
+
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body { 
     font-family: Inter Tight;
     color: #FAFAFA;
     background-color: #1C1D20;
 }
+
 
 .container {
   max-width: 375px;
@@ -12,12 +45,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 734px;
+    min-width: 768px;
+    padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    min-width: 1270px;
+    min-width: 1440px;
   }
 }
+
