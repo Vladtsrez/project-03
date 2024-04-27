@@ -21,8 +21,9 @@ async function fetchReviews() {
 }
 
 async function renderReviews() {
+    try{
     const data = await fetchReviews();
-    review.innerHTML = '';
+        review.innerHTML = '';       
     const reviewElements = data.map(reviews => {
         return `
         <li class='reviews-item swiper-slide' id='${reviews._id}'>
@@ -57,7 +58,12 @@ async function renderReviews() {
     }, 
  
 });
-swiper.init();
+        swiper.init();
+    }
+    catch (error) {
+        review.textContent = 'NOT FOUND';
+        alert('NOT FOUND')
+    }
 }
 
 renderReviews();
