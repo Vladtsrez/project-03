@@ -4,26 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper', {
-   modules: [Navigation],
-  navigation: {
-    nextEl: '.right-btn',
-    prevEl: '.left-btn',
-    },
-    direction: 'horizontal',
-    slidesPerView: 1,
-  breakpoints: {
-    768: {
-          slidesPerView: 2,
-        spaceBetween: 16
-    },
-    
-    1440: {
-        slidesPerView: 4,
-        spaceBetween: 16
-    }
-  }
-});
+
 
 const review = document.querySelector('.reviews-list'); 
 
@@ -52,6 +33,31 @@ async function renderReviews() {
     }).join('');
 
     review.insertAdjacentHTML('beforeend', reviewElements);
+
+    const swiper = new Swiper('.swiper', {
+    modules: [Navigation],
+    watchOverflow: true,
+  navigation: {
+    nextEl: '.right-btn',
+      prevEl: '.left-btn',      
+    },
+  
+    direction: 'horizontal',
+    slidesPerView: 1,
+  breakpoints: {
+    768: {
+          slidesPerView: 2,
+        spaceBetween: 16
+    },
+    
+    1440: {
+        slidesPerView: 4,
+        spaceBetween: 16
+    }
+    }, 
+ 
+});
+swiper.init();
 }
 
 renderReviews();
