@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.covers {
+    margin: 64px 0;
+    height: 508px;
+}
+
+@media only screen and (min-width: 768px) {
+    .covers {
+        margin: 96px 0;
+        height: 960px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .covers {
+        margin: 164px 0;
+    }
+}
+
+/* пропливаючий рядок з фото */
+.covers-content {
+    position: relative;
+    background-image: url("../img/covers/covers-bg-1x.webp");
+}
+
+.covers-marquee {
+    position: absolute;
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+}
+
+.covers-marquee__inner {
+    /*height: 100vh; */
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    transform: rotate(16deg);
+}
+
+.covers-marquee__line {
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: calc(100% / 3); */
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 768px) {
+    .covers-marquee__line {
+        width: 544px;
+        height: 314px;
+    }
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+}
