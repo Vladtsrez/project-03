@@ -13,7 +13,7 @@ new Accordion('.accordion-container', {
 
 
  let sviperHtml = '.mySwiper';
-let swiperButtonNext =  '.swiper-button-next';
+let swiperButtonNext = '.long-arrow-right';
 
 if (screen.width < 768) {
   let swiper = new Swiper(sviperHtml, {

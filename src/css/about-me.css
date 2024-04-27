@@ -178,15 +178,11 @@
  {
     background-color:transparent;
 }
-.slaider-div .swiper-button-next{
-    position: unset;
-}
-
 .long-arrow-right {
     display: block;
     margin: 30px auto;
-    width: 25px;
-    height: 25px;
+    width: 12px;
+    height: 12px;
     border-top: 2px solid #b29b9b;
     border-left: 2px solid #b1a3a3;
 }
@@ -199,9 +195,9 @@
     content: "";
     display: block;
     width: 2px;
-    height: 45px;
+    height: 10px;
     background-color: rgb(190, 173, 173);
-    transform: rotate(-45deg) translate(15px, 4px);
+    transform: rotate(-45deg) translate(3px, 0px);
     left: 0;
     top: 0;
 }
