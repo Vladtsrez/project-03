@@ -1,0 +1,93 @@
+:root {
+    --color-text-functional: #404bbf;
+    --color-text-websites: #31d0aa;
+ 
+}
+
+/* first section */
+
+
+
+
+.first-section-about-me {
+    display: flex;
+}
+
+.about-me-intro{
+    text-transform: uppercase ;
+}
+.about-word-function{
+
+}
+.about-word-websites{
+
+}
+
+.img-about-me {
+    width: 343px;
+    height: 500px;
+    border-radius: 24px;
+    margin: auto;
+}
+
+
+
+
+
+/* Section two */
+.ac .ac-header .ac-trigger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.accordion-container .ac.is-active .ac-header .ac-trigger::after,
+.ac .ac-header .ac-trigger::after {
+    content: none;
+}
+
+
+.cercio {
+    display: block;
+    position: relative;
+    padding: 5px;
+    /* left: 85%; */
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: all 0.2s linear;
+}
+
+.cercio:hover {
+    transform: translate3d(0, 10px, 0);
+}
+
+.is-active .cercio:hover {
+    transform: translate3d(0, -10px, 0);
+}
+
+.is-active .cercio::after,
+.cercio::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    z-index: 11;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.is-active .cercio::after {
+    top: 13px;
+    transform: rotate(45deg);
+}
+
+.cercio::after {
+    top: 6px;
+    transform: rotate(225deg);
+}

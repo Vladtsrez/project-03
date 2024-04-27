@@ -1,9 +1,31 @@
-<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+
   <section>
-    <div class="accordion-container">
-      <div class="ac">
+    <!-- first-section -->
+    <div clas="first-section-about-me">
+      <h3 class="about-me-intro">I work with people all over the world to create impressive and 
+      <span class="about-word-function">functional</span><span class="about-word-websites">websites</span> that reflect each client's unique personality.</h3>
+      <img class="img-about-me" srcset="/img/about-me/about-me-1x-min.jpg 288w,
+                   /img/about-me/about-me-2x-min.jpg 576w,
+                   /img/about-me/about-me-tablet-1x-min.jpg 356w,
+                   /img/about-me/about-me-tablet-2x-min.jpg 712w,
+                   /img/about-me/about-me-1x-min.jpg 360w,
+                   /img/about-me/about-me-2x-min.jpg 720w
+                    " sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 768px) 288px"
+                    alt="my photo" src="img/about-me/about-me-1x-min.jpg">
+    </div>
+    <!-- second-section -->
+    <div clas="second-section-about-me">
+    <ul class="accordion-container">
+      <li class="ac">
         <h3 class="ac-header">
-          <button type="button" class="ac-trigger">ABOUT ME</button>
+          <button type="button" class="ac-trigger">ABOUT ME <span class="cercio"></span></button>
         </h3>
         <div class="ac-panel">
           <ul class="ac-text">
@@ -34,22 +56,22 @@
             </li>
           </ul>
         </div>
-      </div>
+      </li>
 
-      <div class="ac">
+      <li class="ac">
         <h3 class="ac-header">
-          <button type="button" class="ac-trigger">ROLE</button>
+          <button type="button" class="ac-trigger">ROLE <span class="cercio"></span></button>
         </h3>
         <div class="ac-panel">
           <p class="ac-text">Frontend development</p>
           <p class="ac-text">HeadlessCMS,Wordpress</p>
           <p class="ac-text">Blender(enjoy)</p>
         </div>
-      </div>
+      </li>
 
-      <div class="ac">
+      <li class="ac">
         <h3 class="ac-header">
-          <button type="button" class="ac-trigger">EDUCATION</button>
+          <button type="button" class="ac-trigger">EDUCATION <span class="cercio"></span></button>
         </h3>
         <div class="ac-panel">
           <p class="ac-text">
@@ -63,12 +85,62 @@
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
           </p>
         </div>
-      </div>
+      </li>
+    </li>
+
+
+    </ul>
     </div>
-    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
-    <script>
-      new Accordion('.accordion-container');
-      // Default options
-    </script>
+
+
+
+
+  <ul class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <li class="swiper-slide">HTML/CSS</li>
+          <li class="swiper-slide">JavaScript</li>
+          <li class="swiper-slide">React</li>
+          <li class="swiper-slide">Node. js</li>
+          <li class="swiper-slide">React Native</li>
+          <li class="swiper-slide">Soft skills</li>
+      </div>
+
+    <div class="swiper-button-next"></div>
+  </ul>
+
+
+
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script> 
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+
+<!-- <script>
+
+ var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+      },
+      loop: true,
+      slidesPerView: 3,
+            mousewheel: true,
+      keyboard: true,
+
+    });
+
+    </script> -->
+
+
+
+
+  
+
+
+
+
+
+
+
+
   </section>
 </html>
