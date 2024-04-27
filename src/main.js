@@ -10,5 +10,5 @@ import './js/about-me.js';
 import './js/benefits.js';
 import './js/projects.js';
 
-import './js/reviews.js';
+//import './js/reviews.js';
 import './js/work-together.js';
