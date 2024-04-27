@@ -41,30 +41,34 @@
 .faq-ac-text {
 } */
 
-.accordion-container .ac {
+.accordion-container .ac.faq-ac {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
   border-left: none;
   border-right: none;
+  border-bottom: none;
   background-color: #1c1d20;
   box-sizing: border-box;
 }
-.ac .ac-header {
-  /* margin-top: 60px; */
-  /* padding-top: 20px; */
+
+.accordion-container .ac.faq-ac:last-child {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.ac .ac-header .ac-trigger {
+.ac .ac-header .ac-trigger.faq-ac-trigger {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
   margin: 0;
-  align-items: center;
 
   font: 600 20px/1.5 'Inter Tight', sans-serif;
+  letter-spacing: -0.02em;
   color: #fafafa;
   text-align: left;
   width: 100%;
@@ -73,21 +77,20 @@
   text-decoration: none;
 }
 
-.accordion-container .ac.is-active .ac-header .ac-trigger::after,
-.ac .ac-header .ac-trigger::after {
+.accordion-container .ac.is-active .ac-header .ac-trigger.faq-ac-trigger::after,
+.ac .ac-header .ac-trigger.faq-ac-trigger::after {
   content: none;
 }
 
-/* Приклад кола  */
 .faq-ac-button {
   display: block;
   position: relative;
-  padding: 5px;
-  /* left: 85%; */
-  height: 36px;
-  width: 36px;
+  padding: 0;
+  margin-left: 20px;
+  min-height: 36px;
+  min-width: 36px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid rgba(250, 250, 250, 0.2);
   transition: all 0.2s linear;
 }
 
@@ -102,18 +105,42 @@
   left: 13px;
   z-index: 11;
   display: block;
-  width: 8px;
-  height: 8px;
-  border-top: 3px solid #fafafa;
-  border-left: 3px solid #fafafa;
-}
-
-.is-active .faq-ac-button::after {
+  min-width: 8px;
+  min-height: 8px;
+  border-top: 2px solid #fafafa;
+  border-left: 2px solid #fafafa;
   top: 14px;
   transform: rotate(45deg);
 }
 
+/* .is-active .faq-ac-button::after {
+  top: 14px;
+  transform: rotate(45deg);
+} */
+
 .faq-ac-button::after {
   top: 12px;
   transform: rotate(225deg);
+}
+
+.ac .ac-panel.faq-ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+.ac .ac-panel .ac-text.faq-ac-text {
+  font: 500 16px/1.5 'Inter Tight', sans-serif;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.ac.js-enabled .ac-panel.faq-ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel.faq-ac-panel {
+  visibility: visible;
 }
