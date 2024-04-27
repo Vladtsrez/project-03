@@ -1,68 +1,248 @@
-<section class="covers" id="covers-id">
-  <link rel="stylesheet" href="../css/covers.css" />
-
-  <div" class="covers-content">
+<section class="covers" id="covers">
+  <div class="covers-content">
     <div class="covers-marquee">
       <div class="covers-marquee__inner">
-        <!-- <marquee behavior="scroll"> -->
-        <img" class="covers-marquee__line"
-          src="../img/covers/covers-6-1x-min.webp" 
-          alt="row 1 - photo 6" 
-        />
-        <!-- </marquee> -->
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-6-1x-min.webp 1x,
+              ../img/covers/covers-6-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers6-mob1x.webp 1x,
+              ../img/covers/covers6-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers6-mob1x.webp"
+            alt="row 1 - photo 6"
+          />
+        </picture>
       </div>
       <div class="covers-marquee__inner">
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-10-1x-min.webp"
-          alt="row 2 - photo 10"
-        />
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-7-1x-min.webp"
-          alt="row 2 - photo 7"
-        />
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-10-1x-min.webp 1x,
+              ../img/covers/covers-10-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers10-mob1x.webp 1x,
+              ../img/covers/covers10-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers10-mob1x.webp"
+            alt="row 2 - photo 10"
+          />
+        </picture>
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-7-1x-min.webp 1x,
+              ../img/covers/covers-7-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers7-mob1x.webp 1x,
+              ../img/covers/covers7-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers7-mob1x.webp"
+            alt="row 2 - photo 7"
+          />
+        </picture>
       </div>
+
       <div class="covers-marquee__inner">
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-11-1x-min.webp"
-          alt="row 3 - photo 11"
-        />
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-1-1x-min.webp"
-          alt="row 3 - photo 1"
-        />
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-8-1x-min.webp"
-          alt="row 3 - photo 8"
-        />
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-11-1x-min.webp 1x,
+              ../img/covers/covers-11-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers11-mob1x.webp 1x,
+              ../img/covers/covers11-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers11-mob1x.webp"
+            alt="row 3 - photo 11"
+          />
+        </picture>
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-1-1x-min.webp 1x,
+              ../img/covers/covers-1-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers1-mob1x.webp 1x,
+              ../img/covers/covers1-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers1-mob1x.webp"
+            alt="row 3 - photo 1"
+          />
+        </picture>
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-8-1x-min.webp 1x,
+              ../img/covers/covers-8-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers8-mob1x.webp 1x,
+              ../img/covers/covers8-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers8-mob1x.webp"
+            alt="row 3 - photo 8"
+          />
+        </picture>
       </div>
+
       <div class="covers-marquee__inner">
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-9-1x-min.webp"
-          alt="row 4 - photo 9"
-        />
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-4-1x-min.webp"
-          alt="row 4 - photo 4"
-        />
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-5-1x-min.webp"
-          alt="row 4 - photo 5"
-        />
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-9-1x-min.webp 1x,
+              ../img/covers/covers-9-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers9-mob1x.webp 1x,
+              ../img/covers/covers9-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers9-mob1x.webp"
+            alt="row 4 - photo 9"
+          />
+        </picture>
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-4-1x-min.webp 1x,
+              ../img/covers/covers-4-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers4-mob1x.webp 1x,
+              ../img/covers/covers4-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers4-mob1x.webp"
+            alt="row 4 - photo 4"
+          />
+        </picture>
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-5-1x-min.webp 1x,
+              ../img/covers/covers-5-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers5-mob1x.webp 1x,
+              ../img/covers/covers5-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers5-mob1x.webp"
+            alt="row 4 - photo 5"
+          />
+        </picture>
       </div>
+
       <div class="covers-marquee__inner">
-        <img
-          class="covers-marquee__line"
-          src="../img/covers/covers-12-1x-min.webp"
-          alt="row 5 - photo 12"
-        />
+        <picture class="covers-marguee-line">
+          <!-- Tablet-Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/covers/covers-12-1x-min.webp 1x,
+              ../img/covers/covers-12-2x-min.webp 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/covers/covers12-mob1x.webp 1x,
+              ../img/covers/covers12-mob2x.webp 2x
+            "
+          />
+          <img
+            class="covers-marquee__line"
+            src="../img/covers/covers12-mob1x.webp"
+            alt="row 5 - photo 12"
+          />
+        </picture>
       </div>
     </div>
   </div>
