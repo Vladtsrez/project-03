@@ -20,6 +20,7 @@ if (screen.width < 768) {
     navigation: {
       nextEl: swiperButtonNext,
     },
+    edgeSwipeThreshold: 40,
     loop: true,
     slidesPerView: 2,
     mousewheel: true,
@@ -50,37 +51,37 @@ if (screen.width < 768) {
   });
 }
 
-// window.onresize = function () {
+window.onresize = function () {
 
-//     if (screen.width < 768) {
-//       let swiper = new Swiper(sviperHtml, {
-//         navigation: {
-//           nextEl: swiperButtonNext,
-//         },
-//         loop: true,
-//         slidesPerView: 2,
-//         mousewheel: true,
-//         keyboard: true,
-//       });
-//     } else if (screen.width < 1400) {
-//       let swiper = new Swiper(sviperHtml, {
-//         navigation: {
-//           nextEl: swiperButtonNext,
-//         },
-//         loop: true,
-//         slidesPerView: 3,
-//         mousewheel: true,
-//         keyboard: true,
-//       });
-//     } else {
-//       let swiper = new Swiper(sviperHtml, {
-//         navigation: {
-//           nextEl: swiperButtonNext,
-//         },
-//         loop: true,
-//         slidesPerView: 6,
-//         mousewheel: true,
-//         keyboard: true,
-//       });
-//     }
-// };
+    if (screen.width < 768) {
+      let swiper = new Swiper(sviperHtml, {
+        navigation: {
+          nextEl: swiperButtonNext,
+        },
+        loop: true,
+        slidesPerView: 2,
+        mousewheel: true,
+        keyboard: true,
+      });
+    } else if (screen.width < 1400) {
+      let swiper = new Swiper(sviperHtml, {
+        navigation: {
+          nextEl: swiperButtonNext,
+        },
+        loop: true,
+        slidesPerView: 3,
+        mousewheel: true,
+        keyboard: true,
+      });
+    } else {
+      let swiper = new Swiper(sviperHtml, {
+        navigation: {
+          nextEl: swiperButtonNext,
+        },
+        loop: true,
+        slidesPerView: 6,
+        mousewheel: true,
+        keyboard: true,
+      });
+    }
+};
