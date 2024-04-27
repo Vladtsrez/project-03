@@ -1,0 +1,99 @@
+/* @import url('./reset.css'); */
+.reviews-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.title-review {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    margin-bottom: 32px;
+}
+
+.reviews-list{
+    font-size: 30px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
+}
+
+.reviews-photo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+}
+
+
+
+.reviews-item {
+    padding: 32px 24px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+}
+
+
+
+.author-name {
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.author-review {
+    color: rgba(250, 250, 250, 0.6);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+
+.left-btn {
+box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    position: static;
+    width: 68px;
+    height: 68px;
+    background-color: #1C1D20;
+}
+
+.right-btn {
+box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    position: static;
+    width: 68px;
+    height: 68px;
+    background-color: #1C1D20;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px  ;
+}
+
+.swiper {
+    height: 302px;
+    margin-bottom: 32px;
+
+    
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+}
+
+
