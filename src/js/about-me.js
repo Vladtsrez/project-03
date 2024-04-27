@@ -5,7 +5,9 @@ import Swiper from 'swiper/bundle';
 
 
 import 'swiper/css/bundle';
-new Accordion('.accordion-container');
+new Accordion('.accordion-container', {
+    openOnInit:[0]
+});
 
 
 
@@ -22,6 +24,7 @@ if (screen.width < 768) {
     slidesPerView: 2,
     mousewheel: true,
     keyboard: true,
+    openOnInit: 0,
   });
 } else if (screen.width < 1400) {
   let swiper = new Swiper(sviperHtml, {
@@ -32,6 +35,7 @@ if (screen.width < 768) {
     slidesPerView: 3,
     mousewheel: true,
     keyboard: true,
+    openOnInit: 0,
   });
 } else {
   let swiper = new Swiper(sviperHtml, {
@@ -42,6 +46,7 @@ if (screen.width < 768) {
     slidesPerView: 6,
     mousewheel: true,
     keyboard: true,
+      openOnInit:[0],
   });
 }
 

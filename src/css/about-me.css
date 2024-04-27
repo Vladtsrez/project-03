@@ -1,7 +1,7 @@
 :root {
-    --color-text-functional: #404bbf;
-    --color-text-websites: #31d0aa;
- 
+    --color-text-functional: #ED3B44;
+    --color-text-websites: #FAFAFA66;
+    --color-bacgraund-one: #242527;
 }
 
 /* first section */
@@ -11,23 +11,32 @@
 
 .first-section-about-me {
     display: flex;
+   
+    width: 343px;
+
+
+    
 }
 
 .about-me-intro{
     text-transform: uppercase ;
+    font-size: 24px; 
+    text-align: center;
+    
+    
 }
 .about-word-function{
-
+    color: var(--color-text-functional);
 }
 .about-word-websites{
-
+    color:var(--color-text-websites);
 }
 
 .img-about-me {
     width: 343px;
-    height: 500px;
+
     border-radius: 24px;
-    margin: auto;
+    margin: 16px auto;
 }
 
 
