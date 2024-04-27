@@ -1,0 +1,42 @@
+.faq-section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.faq-header {
+  padding-left: 0;
+  padding-top: 0;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-title {
+    position: absolute;
+  }
+}
+
+.faq-accordion-container {
+}
+.ac.faq-ac {
+  color: white;
+  background-color: transparent;
+}
+.ac-header {
+}
+.faq-ac-header {
+}
+
+.ac-panel {
+}
+.faq-ac-panel {
+}
+.ac-text {
+}
+.faq-ac-text {
+}
