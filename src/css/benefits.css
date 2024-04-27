@@ -12,6 +12,12 @@
   margin-bottom: 32px;
 }
 
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .benefits-wrapper {
     padding-top: 48px;
@@ -22,19 +28,14 @@
     padding: 24px;
     width: 344px;
     height: 270px;
-    margin-bottom: 0;
   }
 }
 
-.benefits-item:last-child {
-  margin-bottom: 32px;
-}
+
 
 @media screen and (min-width: 768px) {
   .benefits-list {
-    gap: 16px;
-    display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     flex-wrap: wrap;
   }
 }
@@ -52,8 +53,8 @@
   border-radius: 20px;
   padding: 24px;
   background: #242527;
-  margin-bottom: 16px;
 }
+
 
 .benefits-item:hover {
   box-shadow: 0 14px 15px var(--Theme_red);
@@ -96,7 +97,7 @@
   width: 187px;
   height: 55px;
   transition: border-color var(--Animation_cubic);
-  margin-top: 32px;
+  margin-top: 64px;
 }
 
 .button-wrapper:hover {
