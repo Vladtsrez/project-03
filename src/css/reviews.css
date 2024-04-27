@@ -31,27 +31,20 @@
     margin-bottom: 32px;
 }
 
-.reviews-list {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-    gap: 16px;
-}
+
 
 .reviews-item {
     padding: 32px 24px;
     box-sizing: border-box;
         border: 1px solid rgba(250, 250, 250, 0.2);
         border-radius: 20px;
-        /* width: 344px; */
+        width: 344px;
         height: 302px;
 }
 
 
 
 .author-name {
-    /* Mobile/H5 */
     color: rgb(250, 250, 250);
     font-family: Inter Tight;
     font-size: 20px;
@@ -63,7 +56,6 @@
 }
 
 .author-review {
-    /* Mobile/Main text */
     color: rgba(250, 250, 250, 0.6);
     font-family: Inter Tight;
     font-size: 16px;
@@ -73,38 +65,39 @@
     text-align: left;
 }
 
-.btn-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .left-btn {
-
+box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    position: static;
+        width: 68px;
+        height: 68px;
+        background-color: #1C1D20;
 }
 
 .right-btn {
-    /* arrow */
-    position: static;
-    width: 52px;
-    height: 52px;
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
-
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 12px;
-    transform: rotate(180.00deg);
-    box-sizing: border-box;
+box-sizing: border-box;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
+    position: static;
+        width: 68px;
+        height: 68px;
+        background-color: #1C1D20;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px  ;
+}
+
+.swiper {
+    height: 302px;
+    margin-bottom: 32px;
+}
+
+
+
 
 

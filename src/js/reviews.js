@@ -7,10 +7,22 @@ import { Navigation } from 'swiper/modules';
 const swiper = new Swiper('.swiper', {
    modules: [Navigation],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.right-btn',
+    prevEl: '.left-btn',
     },
     direction: 'horizontal',
+    slidesPerView: 1,
+  breakpoints: {
+    768: {
+          slidesPerView: 2,
+        spaceBetween: 16
+    },
+    
+    1440: {
+        slidesPerView: 4,
+        spaceBetween: 16
+    }
+  }
 });
 
 const review = document.querySelector('.reviews-list'); 
