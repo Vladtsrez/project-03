@@ -8,21 +8,31 @@ body {
     box-sizing: border-box;
 }
 
+/* .covers-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+} */
+
 .covers-section {
-    padding: 32px 0;
-    /* height: 508px; */
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 508px;
 }
 
 @media only screen and (min-width: 768px) {
     .covers-section {
-        margin: 48px 0;
+        padding-top: 48px;
+        padding-bottom: 48px;
         height: 960px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .covers-section {
-        margin: 82px 0;
+        padding-top: 82px;
+        padding-bottom: 82px;
     }
 }
 
@@ -33,6 +43,7 @@ body {
 
 .covers-marquee {
     position: absolute;
+    right: -800px;
     background-image: url("../img/covers/covers-bg-1x.webp");
     background-repeat: no-repeat;
     background-position: center;
@@ -46,8 +57,13 @@ body {
     flex-direction: column;
     gap: 28px;   
     height: 508px;
+    /* width: 100%; */
 }
 
+/* @media only screen and (min-width: 376px) and (max-width: 767px) {
+    .covers-marquee {
+    }
+} */
 
 @media only screen and (min-width: 768px) {
     .covers-marquee {
@@ -68,7 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 3);
+    /* width: calc(100% /3 ); */
     white-space: nowrap;
     animation-name: marqueeLine;
     animation-duration: 5s;
@@ -85,7 +101,7 @@ body {
 
 @keyframes marqueeLine {
     from {
-        transform: translateX(-20%);
+        transform: translateX(-10%);
     }
 
     to {
