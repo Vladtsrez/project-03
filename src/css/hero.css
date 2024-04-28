@@ -46,6 +46,10 @@
     height: 35px;
 }
 
+.social-li:hover {
+    outline: 1px solid #fafafa;
+}
+
 .social-li-sm {
     min-width: 35px;
 }
@@ -72,6 +76,7 @@
         height: 53px;
         min-width: 53px;
     }
+    
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
