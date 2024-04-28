@@ -1,17 +1,30 @@
 <footer class="footer">
+    <div class="footer-container container">
     <div class="text-footer">
-    <img src="../img/about-me/about-me-1x-min.jpg" alt="foto">
+        <img
+            class="footer-img"
+            srcset="
+              ./img/header/logo-1x-min.webp,
+              ./img/header/logo-2x-min.webp
+            "
+            src="./img/header/logo-1x-min.webp"
+            alt="Lloyd Jefferson photo"
+            width="70"
+            height="70"
+            loading="lazy"
+          />
     <h2>Let’s <span>work </span><br>together</h2>
 </div>
 <form id="form-footer">
 <div class="input-footer">
     <input type="email" id="email" placeholder="clients@gmail.com">
     <input type="text" id="comment" placeholder="comments">
-    <button class="button">send</button>
+    <button class="footer-button">send</button>
 </div>
 </form>
     <address class="contact-footer">
             <a class="address-link-footer" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
             <a class="address-link-footer" href="tel:+3801111111111">+380 11 1111 11 11</a>
         </address>
+    </div>
 </footer>
