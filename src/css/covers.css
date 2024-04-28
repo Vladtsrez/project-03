@@ -1,17 +1,8 @@
-body {
-    margin: 0;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 .covers-section {
     padding-top: 32px;
     padding-bottom: 32px;
     height: 508px;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
