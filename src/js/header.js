@@ -9,8 +9,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
   function toggleMenuDisplay() {
-    menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
-  }
+    if (menuList.style.display === 'flex') {
+        menuList.style.opacity = '0';
+        setTimeout(() => {
+            menuList.style.display = 'none';
+        }, 250); 
+    } else {
+        menuList.style.display = 'flex';
+        setTimeout(() => {
+            menuList.style.opacity = '1';
+        }, 150); 
+    }
+}
 
   function closeMobileMenu() {
     mobileContainer.style.opacity = '0';
