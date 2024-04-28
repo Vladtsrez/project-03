@@ -10,7 +10,7 @@
 
 
 .section-about-me {
-
+    margin-top: 64px !important;
     flex-direction: column;
     width: 343px;
     margin: auto;
