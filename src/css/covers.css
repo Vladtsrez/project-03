@@ -20,6 +20,10 @@
     }
 }
 
+.covers-h2 {
+    visibility: hidden;
+}
+
 /* пропливаючий рядок з фото */
 .covers-content {
     position: relative;
