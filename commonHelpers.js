@@ -3,5 +3,5 @@ import{A as d,S as i,N as p,a as w}from"./assets/vendor-8c8bb74a.js";(function()
   <img class='reviews-photo' src="${r.avatar_url}" alt="author_photo">
   <h3 class='author-name'>${r.author}</h3>
   <p class='author-review'>${r.review}</p>
-</li>`).join("");u.insertAdjacentHTML("beforeend",t),new i(".swiper",{modules:[p],watchOverflow:!0,navigation:{nextEl:".right-btn",prevEl:".left-btn"},direction:"horizontal",slidesPerView:1,breakpoints:{768:{slidesPerView:2,spaceBetween:16},1440:{slidesPerView:4,spaceBetween:16}}}).init()}catch{u.textContent="NOT FOUND",alert("NOT FOUND")}}m();
+</li>`).join("");u.insertAdjacentHTML("beforeend",t);const a=new i(".swiper",{modules:[p],watchOverflow:!0,navigation:{nextEl:".right-btn",prevEl:".left-btn"},direction:"horizontal",slidesPerView:1,breakpoints:{768:{slidesPerView:2,spaceBetween:16},1440:{slidesPerView:4,spaceBetween:16}}})}catch{u.textContent="NOT FOUND"}}m();
 //# sourceMappingURL=commonHelpers.js.map
