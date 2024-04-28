@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.covers-section {
+    padding: 32px 0;
+    /* height: 508px; */
+}
+
+@media only screen and (min-width: 768px) {
+    .covers-section {
+        margin: 48px 0;
+        height: 960px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .covers-section {
+        margin: 82px 0;
+    }
+}
+
+/* пропливаючий рядок з фото */
+.covers-content {
+    position: relative;
+}
+
+.covers-marquee {
+    position: absolute;
+    background-image: url("../img/covers/covers-bg-1x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;   
+    height: 508px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .covers-marquee {
+        height: 960px;
+    }
+}
+
+.covers-marquee__inner {
+    height: 100%;
+    display: flex;
+    transform: rotate(16deg);
+    gap: 36px;
+}
+
+.covers-marquee__line {
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 768px) {
+    .covers-marquee__line {
+        width: 544px;
+        height: 314px;
+    }
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+} 
+
+/* .content {
+    position: relative;
+} */
+
+/* .marquee {
+    position: absolute;
+    background-image: url("../img/covers/covers-bg-1x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    left: 0;
+    overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+} */
+
+/* .marquee__inner {
+    display: flex;
+    transform: rotate(16deg);
+    height: 100%;
+    gap: 36px;
+} */
+
+/* .marquee__line {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4);
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+} */
+
+/* @Keyframes marqueeLine {
+    from {
+        transform: translateX(-10%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+} */
