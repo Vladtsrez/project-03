@@ -1,0 +1,112 @@
+.benefits-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .benefits-item {
+    border-radius: 20px;
+    padding: 24px;
+    width: 344px;
+    height: 270px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefits-wrapper {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  .benefits-title {
+    position: absolute;
+  }
+}
+
+.benefits-item {
+  border-radius: 20px;
+  padding: 24px;
+  background: #242527;
+}
+
+
+.benefits-item:hover {
+  box-shadow: 0 14px 15px var(--Theme_red);
+  transition: box-shadow 0.3s;
+}
+@media screen and (min-width: 1440px) {
+  .benefits-list {
+    justify-content: right;
+    margin-left: 500px;
+  }
+}
+
+.benefits-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed3b44;
+  margin-bottom: 64px;
+}
+
+.benefits-item-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.benefits-item-caption {
+  opacity: 0.6;
+}
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  justify-content: center;
+  width: 187px;
+  height: 55px;
+  transition: border-color var(--Animation_cubic);
+  margin-top: 64px;
+}
+
+.button-wrapper:hover {
+  border-color: 1.5px solid var(--Main_text);
+}
+
+@media screen and (min-width: 1440px) {
+  .button-wrapper {
+    margin-left: 49%;
+    /* padding-top: 82px; */
+  }
+}

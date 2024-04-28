@@ -1,0 +1,119 @@
+.faq-section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.faq-header {
+  padding-left: 0;
+  padding-top: 0;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-header {
+    position: absolute;
+  }
+}
+
+/* .faq-accordion-container {
+}
+.ac.faq-ac {
+  color: white;
+  background-color: transparent;
+}
+.ac-header {
+}
+.faq-ac-header {
+}
+
+.ac-panel {
+}
+.faq-ac-panel {
+}
+.ac-text {
+}
+.faq-ac-text {
+} */
+
+.accordion-container .ac {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-left: none;
+  border-right: none;
+  background-color: #1c1d20;
+  box-sizing: border-box;
+}
+.ac .ac-header {
+  /* margin-top: 60px; */
+  /* padding-top: 20px; */
+}
+
+.ac .ac-header .ac-trigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin: 0;
+  align-items: center;
+
+  font: 600 20px/1.5 'Inter Tight', sans-serif;
+  color: #fafafa;
+  text-align: left;
+  width: 100%;
+  background-color: #1c1d20;
+  transition: color 0.25s ease;
+  text-decoration: none;
+}
+
+.accordion-container .ac.is-active .ac-header .ac-trigger::after,
+.ac .ac-header .ac-trigger::after {
+  content: none;
+}
+
+/* Приклад кола  */
+.faq-ac-button {
+  display: block;
+  position: relative;
+  padding: 5px;
+  /* left: 85%; */
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: all 0.2s linear;
+}
+
+.faq-ac-button:hover {
+  transform: translate3d(0, 10px, 0);
+}
+
+.is-active .faq-ac-button::after,
+.faq-ac-button::after {
+  content: '';
+  position: absolute;
+  left: 13px;
+  z-index: 11;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #fafafa;
+  border-left: 3px solid #fafafa;
+}
+
+.is-active .faq-ac-button::after {
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+.faq-ac-button::after {
+  top: 12px;
+  transform: rotate(225deg);
+}
