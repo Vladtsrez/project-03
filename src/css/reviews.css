@@ -50,11 +50,17 @@
 }
 
 .author-review {
-    color: rgba(250, 250, 250, 0.6);
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.02em;
     text-align: left;
+    line-height: 1.5;
+        letter-spacing: -.02em;
+        color: #fafafa99;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
 }
 
 
