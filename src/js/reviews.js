@@ -54,10 +54,9 @@ async function renderReviews() {
         },
       },
     });
-    swiper.init();
   } catch (error) {
     review.textContent = 'NOT FOUND';
-    alert('NOT FOUND');
+    // alert('NOT FOUND');
   }
 }
 
