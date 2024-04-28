@@ -41,8 +41,42 @@
     margin: 16px auto;
 }
 
+@media (min-width: 768px) {
+    .section-about-me{
+        width: 704px;
+    }
+    .img-about-me {
+        width: 704px;
+    }
+    .about-me-intro {
+        font-size: 38px;
+        padding: 64px 64px 436px;
+        line-height:40px;
+    }
+}
 
+@media (min-width: 1440px) {
+        .section-about-me {
+                width: 1374px;
 
+            }
+        .my-losung{
+                display: flex;
+                flex-direction: row;
+        }
+            .img-about-me {
+                width: 680px;
+                margin-left: 16px;
+            }
+        
+            .about-me-intro {
+                font-size: 38px;
+                padding: 64px 64px 436px;
+                line-height: 40px;
+                width: 680px;
+                height: 700px;
+            }
+}
 
 
 /* Section two */
@@ -158,8 +192,7 @@
      font-weight: bold;
      color: #fff;
      border-radius: 50%;
-     height: 130px;
-     width: 130px;
+
      text-align: center;
     border: 1px solid var(--color-text-websites);
  }
@@ -200,4 +233,20 @@
     transform: rotate(-45deg) translate(3px, 0px);
     left: 0;
     top: 0;
+}
+
+@media (min-width: 768px) {
+    .slaider-div .swiper {
+
+            width: 600px;
+            height: 200px;
+    
+        }
+}
+@media (min-width: 1440px) {
+    .slaider-div .swiper {
+            width: 1200px;
+
+    
+        }
 }
