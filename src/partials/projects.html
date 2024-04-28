@@ -2,151 +2,182 @@
   <div class="container">
     <h2 class="projects-heading">projects</h2>
 
-    <ul class="project-cards">
-      <li class="project-cards-item">
-        <div class="projects-card-info">
-          <ul class="projects-card-tech-skills">
-            <li class="projects-card-tech-skills-item">#react</li>
-            <li class="projects-card-tech-skills-item">#js</li>
-            <li class="projects-card-tech-skills-item">#node js</li>
-            <li class="projects-card-tech-skills-item">#git</li>
-          </ul>
+    <div class="projects-swiper-container">
+      <ul class="project-cards swiper-wrapper">
+        <li class="project-cards-item swiper-slide">
+          <div class="project-cards-item-container">
+            <div class="projects-card-info">
+              <ul class="projects-card-tech-skills">
+                <li class="projects-card-tech-skills-item">#react</li>
+                <li class="projects-card-tech-skills-item">#js</li>
+                <li class="projects-card-tech-skills-item">#node js</li>
+                <li class="projects-card-tech-skills-item">#git</li>
+              </ul>
 
-          <p class="projects-card-info-text">
-            Programming Across Borders: Ideas, Technologies, Innovations
-          </p>
+              <p class="projects-card-info-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
 
-          <a
-            class="projects-card-see-project-link"
-            href="https://github.com/Vladtsrez/project-03"
-            target="_blank"
-            >See project</a
+              <a
+                class="projects-card-see-project-link"
+                href="https://github.com/Vladtsrez/project-03"
+                target="_blank"
+                >See project</a
+              >
+            </div>
+            <div class="projects-card-image-container">
+              <picture>
+                <source
+                  srcset="
+                    ./img/projects/first-card-1x.jpg 1x,
+                    ./img/projects/first-card-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  width="614"
+                  height="385"
+                />
+                <source
+                  srcset="
+                    ./img/projects/first-card-1x.jpg 1x,
+                    ./img/projects/first-card-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  width="311"
+                  height="159"
+                />
+                <img
+                  class="projects-card-image"
+                  src="./img/projects/first-card-1x.jpg"
+                  alt="Project image"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="project-cards-item swiper-slide">
+          <div class="project-cards-item-container">
+            <div class="projects-card-info">
+              <ul class="projects-card-tech-skills">
+                <li class="projects-card-tech-skills-item">#react</li>
+                <li class="projects-card-tech-skills-item">#js</li>
+                <li class="projects-card-tech-skills-item">#node js</li>
+                <li class="projects-card-tech-skills-item">#git</li>
+              </ul>
+
+              <p class="projects-card-info-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+
+              <a
+                class="projects-card-see-project-link"
+                href="https://github.com/Vladtsrez/project-03"
+                target="_blank"
+                >See project</a
+              >
+            </div>
+            <div class="projects-card-image-container">
+              <picture>
+                <source
+                  srcset="
+                    ./img/projects/second-card-1x.jpg 1x,
+                    ./img/projects/second-card-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  width="614"
+                  height="385"
+                />
+                <source
+                  srcset="
+                    ./img/projects/second-card-1x.jpg 1x,
+                    ./img/projects/second-card-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  width="311"
+                  height="159"
+                />
+                <img
+                  class="projects-card-image"
+                  src="./img/projects/second-card-1x.jpg"
+                  alt="Project image"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="project-cards-item swiper-slide">
+          <div class="project-cards-item-container">
+            <div class="projects-card-info">
+              <ul class="projects-card-tech-skills">
+                <li class="projects-card-tech-skills-item">#react</li>
+                <li class="projects-card-tech-skills-item">#js</li>
+                <li class="projects-card-tech-skills-item">#node js</li>
+                <li class="projects-card-tech-skills-item">#git</li>
+              </ul>
+
+              <p class="projects-card-info-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+
+              <a
+                class="projects-card-see-project-link"
+                href="https://github.com/Vladtsrez/project-03"
+                target="_blank"
+                >See project</a
+              >
+            </div>
+            <div class="projects-card-image-container">
+              <picture>
+                <source
+                  srcset="
+                    ./img/projects/third-card-1x.jpg 1x,
+                    ./img/projects/third-card-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  width="614"
+                  height="385"
+                />
+                <source
+                  srcset="
+                    ./img/projects/third-card-1x.jpg 1x,
+                    ./img/projects/third-card-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  width="311"
+                  height="159"
+                />
+                <img
+                  class="projects-card-image"
+                  src="./img/projects/third-card-1x.jpg"
+                  alt="Project image"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="projects-swiper-buttons">
+        <button class="projects-swiper-button-prev-custom" type="button">
+          <svg
+            class="projects-swiper-icon-arrow-left"
+            width="24"
+            height="24"
+            aria-label="previous slide button"
           >
-        </div>
-        <div class="projects-card-image-container">
-          <picture>
-            <source
-              srcset="
-                ./img/projects/project-3-1x.jpg     1x,
-                ./img/projects/project-1-2x-min.jpg 2x
-              "
-              media="(min-width:768px)"
-              width="614"
-              height="385"
-            />
-            <source
-              srcset="
-                ./img/projects/project-3-1x.jpg     1x,
-                ./img/projects/project-1-2x-min.jpg 2x
-              "
-              media="(max-width:767px)"
-              width="311"
-              height="159"
-            />
-            <img
-              class="projects-card-image"
-              src="./img/projects/project-3-1x.jpg"
-              alt="Project image"
-            />
-          </picture>
-        </div>
-      </li>
-      <li class="project-cards-item">
-        <div class="projects-card-info">
-          <ul class="projects-card-tech-skills">
-            <li class="projects-card-tech-skills-item">#react</li>
-            <li class="projects-card-tech-skills-item">#js</li>
-            <li class="projects-card-tech-skills-item">#node js</li>
-            <li class="projects-card-tech-skills-item">#git</li>
-          </ul>
-
-          <p class="projects-card-info-text">
-            Programming Across Borders: Ideas, Technologies, Innovations
-          </p>
-
-          <a
-            class="projects-card-see-project-link"
-            href="https://github.com/Vladtsrez/project-03"
-            target="_blank"
-            >See project</a
+            <use href="./img/icons.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+        <button class="projects-swiper-button-next-custom" type="button">
+          <svg
+            class="projects-swiper-icon-arrow-right"
+            width="24"
+            height="24"
+            aria-label="next slide button"
           >
-        </div>
-        <div class="projects-card-image-container">
-          <picture>
-            <source
-              srcset="
-                ./img/projects/project-2-1x.jpg     1x,
-                ./img/projects/project-3-2x-min.jpg 2x
-              "
-              media="(min-width:768px)"
-              width="614"
-              height="385"
-            />
-            <source
-              srcset="
-                ./img/projects/project-2-1x.jpg     1x,
-                ./img/projects/project-3-2x-min.jpg 2x
-              "
-              media="(max-width:767px)"
-              width="311"
-              height="159"
-            />
-            <img
-              class="projects-card-image"
-              src="./img/projects/project-2-1x.jpg"
-              alt="Project image"
-            />
-          </picture>
-        </div>
-      </li>
-      <li class="project-cards-item">
-        <div class="projects-card-info">
-          <ul class="projects-card-tech-skills">
-            <li class="projects-card-tech-skills-item">#react</li>
-            <li class="projects-card-tech-skills-item">#js</li>
-            <li class="projects-card-tech-skills-item">#node js</li>
-            <li class="projects-card-tech-skills-item">#git</li>
-          </ul>
-
-          <p class="projects-card-info-text">
-            Programming Across Borders: Ideas, Technologies, Innovations
-          </p>
-
-          <a
-            class="projects-card-see-project-link"
-            href="https://github.com/Vladtsrez/project-03"
-            target="_blank"
-            >See project</a
-          >
-        </div>
-        <div class="projects-card-image-container">
-          <picture>
-            <source
-              srcset="
-                ./img/projects/project-1-1x.jpg     1x,
-                ./img/projects/project-2-2x-min.jpg 2x
-              "
-              media="(min-width:768px)"
-              width="614"
-              height="385"
-            />
-            <source
-              srcset="
-                ./img/projects/project-1-1x.jpg     1x,
-                ./img/projects/project-2-2x-min.jpg 2x
-              "
-              media="(max-width:767px)"
-              width="311"
-              height="159"
-            />
-            <img
-              class="projects-card-image"
-              src="./img/projects/project-1-1x.jpg"
-              alt="Project image"
-            />
-          </picture>
-        </div>
-      </li>
-    </ul>
+            <use href="./img/icons.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
