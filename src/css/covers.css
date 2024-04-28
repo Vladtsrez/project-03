@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.covers-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 508px;
+}
+
+@media only screen and (min-width: 768px) {
+    .covers-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        height: 960px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .covers-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+}
+
+/* пропливаючий рядок з фото */
+.covers-content {
+    position: relative;
+}
+
+.covers-marquee {
+    position: absolute;
+    right: -800px;
+    background-image: url("../img/covers/covers-bg-1x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 508px;
+    /* width: 100%; */
+}
+
+/* @media only screen and (min-width: 376px) and (max-width: 767px) {
+    .covers-marquee {
+    }
+} */
+
+@media only screen and (min-width: 768px) {
+    .covers-marquee {
+        height: 960px;
+    }
+}
+
+.covers-marquee__inner {
+    height: 100%;
+    display: flex;
+    transform: rotate(16deg);
+    gap: 36px;
+}
+
+.covers-marquee__line {
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% /4);
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 768px) {
+    .covers-marquee__line {
+        width: 544px;
+        height: 314px;
+    }
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-10%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+}
