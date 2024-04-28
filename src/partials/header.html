@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container header-container">
     <nav class="nav-menu">
       <div class="header-logo-container">
@@ -6,8 +6,8 @@
           <img
             class="header-logo-img"
             srcset="
-              ./img/header/logo-1x-min.webp,
-              ./img/header/logo-2x-min.webp
+              ./img/header/logo-1x-min.webp 1x,
+              ./img/header/logo-2x-min.webp 2x
             "
             src="./img/header/logo-1x-min.webp"
             alt="Lloyd Jefferson photo"
@@ -23,10 +23,18 @@
       <div class="header-menu">
         <p class="header-menu-open" tabindex="0">Menu</p>
         <ul class="header-menu-list">
-          <li class="header-menu-link"><a href="#about-me">About me</a></li>
-          <li class="header-menu-link"><a href="#benefits">Benefits</a></li>
-          <li class="header-menu-link"><a href="#projects">Projects</a></li>
-          <li class="header-menu-link"><a href="#faq">FAQ</a></li>
+          <li class="header-menu-link" aria-label="link to about me">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="header-menu-link" aria-label="link to benefits">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="header-menu-link" aria-label="link to projects">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="header-menu-link" aria-label="link to faq">
+            <a href="#faq">FAQ</a>
+          </li>
         </ul>
       </div>
       <a
@@ -47,3 +55,36 @@
     </nav>
   </div>
 </header>
+<div class="mobile-container">
+  <button
+    class="close-menu-button"
+    type="button"
+    aria-label="close menu button"
+  >
+    <svg class="mobile-close-svg" width="28" height="28">
+      <use href="./img/icons.svg#icon-x-1"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-link" aria-label="link to about me">
+      <a href="#about-me">About me</a>
+    </li>
+    <li class="mobile-menu-link" aria-label="link to benefits">
+      <a href="#benefits">Benefits</a>
+    </li>
+    <li class="mobile-menu-link" aria-label="link to projects">
+      <a href="#projects">Projects</a>
+    </li>
+    <li class="mobile-menu-link" aria-label="link to faq">
+      <a href="#faq">FAQ </a>
+    </li>
+  </ul>
+
+  <a
+    class="mobile-link"
+    href="#work-together"
+    aria-label="link to Work together"
+    >Order the project</a
+  >
+</div>
