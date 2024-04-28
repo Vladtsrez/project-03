@@ -166,9 +166,11 @@
   transform: translateX(100%);
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
   visibility: hidden;
+  display: none;
 }
 .mobile-menu-container {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
