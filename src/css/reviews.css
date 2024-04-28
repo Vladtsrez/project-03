@@ -50,11 +50,17 @@
 }
 
 .author-review {
-    color: rgba(250, 250, 250, 0.6);
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.02em;
     text-align: left;
+    line-height: 1.5;
+        letter-spacing: -.02em;
+        color: #fafafa99;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
 }
 
 
@@ -62,20 +68,25 @@
 box-sizing: border-box;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    position: static;
     width: 68px;
     height: 68px;
     background-color: #1C1D20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-btn {
 box-sizing: border-box;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    position: static;
     width: 68px;
     height: 68px;
     background-color: #1C1D20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .btn-container {
@@ -95,4 +106,11 @@ box-sizing: border-box;
     opacity: 0.5;
 }
 
+.rotate180 {
+    transform: rotate(180deg);
+}
 
+.menu-left-btn-icon{
+    position: relative;
+    top: -1px;
+}

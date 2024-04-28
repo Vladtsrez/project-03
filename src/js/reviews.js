@@ -19,7 +19,6 @@ async function fetchReviews() {
 async function renderReviews() {
   try {
     const data = await fetchReviews();
-    review.innerHTML = '';
     const reviewElements = data
       .map(reviews => {
         return `
