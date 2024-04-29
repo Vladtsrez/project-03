@@ -212,11 +212,12 @@
 }
 .long-arrow-right {
     display: block;
-    margin: 30px auto;
-    width: 12px;
-    height: 12px;
-    border-top: 2px solid #b29b9b;
-    border-left: 2px solid #b1a3a3;
+    position: relative;
+    top: -13px;
+    width: 22px;
+    height: 22px;
+    border-top: 4px solid #3B3B3B;
+    border-left: 4px solid#3B3B3B;
 }
 
 .long-arrow-right {
@@ -226,12 +227,13 @@
 .long-arrow-right::after {
     content: "";
     display: block;
-    width: 2px;
-    height: 10px;
-    background-color: rgb(190, 173, 173);
-    transform: rotate(-45deg) translate(3px, 0px);
+    width: 4px;
+    height: 28px;
+    background-color: #3B3B3B;
+transform: rotate(-45deg) translate(8px, 2px);
     left: 0;
     top: 0;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -241,6 +243,26 @@
             height: 200px;
     
         }
+    .long-arrow-right {
+            top: -13px;
+            width: 32px;
+            height: 32px;
+                }
+    .long-arrow-right {
+                    transform: rotate(135deg);
+                }
+        
+                .long-arrow-right::after {
+                    content: "";
+                    display: block;
+                    width: 4px;
+                    height: 40px;
+                    background-color: #3B3B3B;
+                    transform: rotate(-45deg) translate(12px, 2px);
+                    left: 0;
+                    top: 0;
+                    position: relative;
+                }
 }
 @media (min-width: 1440px) {
     .slaider-div .swiper-about-me {
