@@ -2,8 +2,8 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-new Accordion('.accordion-container', {
-    openOnInit:[0]
+new Accordion('.accordion-container-about-me', {
+  openOnInit: [0],
 });
 
 

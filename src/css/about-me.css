@@ -80,7 +80,7 @@
 
 
 /* Section two */
-.ac .ac-header .ac-trigger {
+.ac .ac-header .ac-trigger-about-me {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,8 +88,8 @@
     align-items: center;
 }
 
-.accordion-container .ac.is-active .ac-header .ac-trigger::after,
-.ac .ac-header .ac-trigger::after {
+.accordion-container-about-me .ac.is-active .ac-header .ac-trigger::after,
+.ac-about-me .ac-header .ac-trigger::after {
     content: none;
 }
 
@@ -143,7 +143,6 @@
 .section-about-me .ac,
 .section-about-me .ac-header,
 .section-about-me .ac-trigger,
-
 .section-about-me .accordion-container{
     background-color: transparent;
 
