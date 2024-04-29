@@ -49,7 +49,7 @@
     margin-bottom: 8px;
 }
 
-.author-review {
+.author-review {    
     font-size: 16px;
     line-height: 24px;
     text-align: left;
@@ -89,17 +89,15 @@ box-sizing: border-box;
     
 }
 
-.btn-container {
+.review-btn-container {
     display: flex;
     justify-content: center;
     gap: 20px  ;
 }
 
-.swiper {
+.review-swiper {
     height: 302px;
-    margin-bottom: 32px;
-
-    
+    margin-bottom: 32px;   
 }
 
 .swiper-button-disabled {
@@ -113,4 +111,15 @@ box-sizing: border-box;
 .menu-left-btn-icon{
     position: relative;
     top: -1px;
+}
+
+.menu-left-btn-icon {
+    position: relative;
+    top: -1px;
+    fill: rgb(250, 250, 250);
+    stroke: rgb(250, 250, 250);
+}
+.menu-right-btn-icon {
+    fill: rgb(250, 250, 250);
+    stroke: rgb(250, 250, 250);
 }

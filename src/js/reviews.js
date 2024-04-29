@@ -12,6 +12,7 @@ async function fetchReviews() {
     const response = await axios(url);
     return response.data;
   } catch (error) {
+    console.log(error);
     throw new Error('Failed to fetch reviews');
   }
 }
@@ -32,7 +33,7 @@ async function renderReviews() {
 
     review.insertAdjacentHTML('beforeend', reviewElements);
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.review-swiper', {
       modules: [Navigation],
       watchOverflow: true,
       navigation: {
@@ -56,6 +57,7 @@ async function renderReviews() {
     });
   } catch (error) {
     review.textContent = 'NOT FOUND';
+    console.log(error);
     // alert('NOT FOUND');
   }
 }
