@@ -1,18 +1,15 @@
 import Accordion from 'accordion-js';
-// import Swiper from 'swiper/bu';
-// import 'swiper/css';
 import Swiper from 'swiper/bundle';
-
-
 import 'swiper/css/bundle';
-new Accordion('.accordion-container', {
-    openOnInit:[0]
+
+new Accordion('.accordion-container-about-me', {
+  openOnInit: [0],
 });
 
 
 
 
- let sviperHtml = '.mySwiper';
+let sviperHtml = '.swiper-about-me';
 let swiperButtonNext = '.long-arrow-right';
 
 if (screen.width < 768) {
@@ -25,7 +22,7 @@ if (screen.width < 768) {
     slidesPerView: 2,
     mousewheel: true,
     keyboard: true,
-    openOnInit: 0,
+    openOnInit: [0],
   });
 } else if (screen.width < 1400) {
   let swiper = new Swiper(sviperHtml, {
@@ -36,7 +33,7 @@ if (screen.width < 768) {
     slidesPerView: 3,
     mousewheel: true,
     keyboard: true,
-    openOnInit: 0,
+    openOnInit: [0],
   });
 } else {
   let swiper = new Swiper(sviperHtml, {
@@ -73,6 +70,7 @@ window.onresize = function () {
         mousewheel: true,
         keyboard: true,
       });
+
     } else {
       let swiper = new Swiper(sviperHtml, {
         navigation: {
@@ -83,5 +81,6 @@ window.onresize = function () {
         mousewheel: true,
         keyboard: true,
       });
-    }
+  }
+  
 };
