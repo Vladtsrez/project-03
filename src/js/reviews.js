@@ -1,8 +1,7 @@
 import axios from 'axios';
-import Swiper from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const review = document.querySelector('.reviews-list');
 
@@ -34,7 +33,6 @@ async function renderReviews() {
     review.insertAdjacentHTML('beforeend', reviewElements);
 
     const swiper = new Swiper('.review-swiper', {
-      modules: [Navigation],
       watchOverflow: true,
       navigation: {
         nextEl: '.right-btn',
