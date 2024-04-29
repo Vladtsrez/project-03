@@ -89,6 +89,10 @@
   padding: 100px 16px;
 }
 
+.projects-swiper-container {
+  overflow: hidden;
+}
+
 .projects-swiper-buttons {
   display: flex;
   gap: 12px;

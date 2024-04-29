@@ -4,6 +4,11 @@ import 'swiper/css/bundle';
 document.body.style.overflowX = 'hidden';
 
 new Swiper('.projects-swiper-container', {
+  watchOverflow: true,
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 50,
+
   navigation: {
     nextEl: '.projects-swiper-button-next-custom',
     prevEl: '.projects-swiper-button-prev-custom',
@@ -12,6 +17,4 @@ new Swiper('.projects-swiper-container', {
   keyboard: {
     enabled: true,
   },
-
-  spaceBetween: 100,
 });
