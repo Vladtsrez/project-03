@@ -1,10 +1,7 @@
 import Accordion from 'accordion-js';
-// import Swiper from 'swiper/bu';
-// import 'swiper/css';
 import Swiper from 'swiper/bundle';
-
-
 import 'swiper/css/bundle';
+
 new Accordion('.accordion-container', {
     openOnInit:[0]
 });

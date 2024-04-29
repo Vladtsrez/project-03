@@ -170,13 +170,13 @@
     flex-direction: row;
     align-items: center;
 }
-.slaider-div .swiper {
+.slaider-div .swiper-about-me {
     margin-left:0 ;
         width: 260px;
      height: 130px;
 
  }
-.swiper-wrapper{
+.swiper-swiper-about-me{
     display: flex;
     
 
@@ -184,7 +184,7 @@
     text-justify: distribute;
 }
 
- .swiper-wrapper .swiper-slide {
+ .swiper-wrapper-about-me .swiper-slide-about-me {
      display: flex ;
      align-items: center;
      justify-content: center;
@@ -197,17 +197,17 @@
     border: 1px solid var(--color-text-websites);
  }
 
-.swiper-slide:nth-child(1n) {
+.swiper-slide-about-me:nth-child(1n) {
     background-color: #ED3B44;
     
     
 
 }
-.swiper-slide:nth-child( 2n),
-.swiper-slide:nth-child(3n),
-.swiper-slide:nth-child(4n),
-.swiper-slide:nth-child(5n),
-.swiper-slide:nth-child(6n)
+.swiper-slide-about-me:nth-child( 2n),
+.swiper-slide-about-me:nth-child(3n),
+.swiper-slide-about-me:nth-child(4n),
+.swiper-slide-about-me:nth-child(5n),
+.swiper-slide-about-me:nth-child(6n)
  {
     background-color:transparent;
 }
@@ -236,7 +236,7 @@
 }
 
 @media (min-width: 768px) {
-    .slaider-div .swiper {
+    .slaider-div .swiper-about-me {
 
             width: 600px;
             height: 200px;
@@ -244,7 +244,7 @@
         }
 }
 @media (min-width: 1440px) {
-    .slaider-div .swiper {
+    .slaider-div .swiper-about-me {
             width: 1200px;
 
     
