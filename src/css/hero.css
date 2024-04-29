@@ -76,7 +76,12 @@
         height: 53px;
         min-width: 53px;
     }
-    
+    .hero-title {
+        font-size: 90px;
+        line-height: 90px;
+        width: auto;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
