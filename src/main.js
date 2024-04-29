@@ -1,6 +1,10 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 import './js/header.js';
 import './js/hero.js';
 import './js/covers.js';
