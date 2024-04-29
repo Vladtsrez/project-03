@@ -1,5 +1,9 @@
 /* =============== mobile ================ */
 
+body {
+  font-weight: 400;
+}
+
 .projects-section {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -9,6 +13,7 @@
   color: rgb(250, 250, 250, 40%);
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
   margin-bottom: 32px;
@@ -25,7 +30,6 @@
 
 .project-cards-item-container {
   max-width: 343px;
-  flex: 0 0 auto;
 }
 
 .projects-card-info {
@@ -43,6 +47,8 @@
 
 .projects-card-tech-skills-item {
   color: #1c1d20;
+  font-size: 16px;
+  font-weight: 500;
   letter-spacing: -0.02em;
   border: 1px solid rgb(28, 29, 32, 20%);
   border-radius: 60px;
@@ -57,13 +63,17 @@
 .projects-card-info-text {
   color: #1c1d20;
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.17;
   letter-spacing: -0.03em;
+  text-align: left;
   margin-bottom: 32px;
 }
 
 .projects-card-see-project-link {
   display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
   letter-spacing: -0.02em;
   background-color: #ed3b44;
   border-radius: 60px;
@@ -73,11 +83,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms linear, transform 250ms linear;
 }
 
 .projects-card-see-project-link:hover,
 .projects-card-see-project-link:focus {
+  transform: scale(1.1);
   background-color: #e0373f;
 }
 
@@ -121,6 +132,11 @@
 
 .projects-swiper-icon-arrow-left {
   transform: rotate(180deg);
+}
+
+#projects-swiper-wrapper,
+#projects-swiper-slide {
+  border: none;
 }
 
 /* =============== / mobile ================ */
