@@ -146,6 +146,11 @@
     gap: 32px;
   }
 
+.footer input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #1C1D20 inset;
+  -webkit-text-fill-color: #fafafa;
+}
+
   #email,
   #comment {
     width: 245px;
@@ -186,12 +191,6 @@
     width: 390px;
   }
 }
-
-
-
-
-
-
 
 
 

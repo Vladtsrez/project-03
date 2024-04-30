@@ -19,6 +19,18 @@
   margin-bottom: 32px;
 }
 
+.benefits-item {
+    transition: transform 0.3s ease-out;
+}
+.benefits-item:hover {
+  transform: scale(103%);
+
+}
+
+
+
+
+
 @media screen and (min-width: 768px) {
   .benefits-wrapper {
     padding-top: 48px;
