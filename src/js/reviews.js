@@ -34,6 +34,7 @@ async function renderReviews() {
 
     const swiper = new Swiper('.review-swiper', {
       watchOverflow: true,
+      keyboard: true,
       navigation: {
         nextEl: '.right-btn',
         prevEl: '.left-btn',
