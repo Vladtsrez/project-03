@@ -3,5 +3,5 @@ import{A as m,S as i,a as f,b as h}from"./assets/vendor-d93669fe.js";(function()
   <img class='reviews-photo' src="${t.avatar_url}" alt="author_photo">
   <h3 class='author-name'>${t.author}</h3>
   <p class='author-review'>${t.review}</p>
-</li>`).join("");p.insertAdjacentHTML("beforeend",e);const u=new i(".review-swiper",{watchOverflow:!0,navigation:{nextEl:".right-btn",prevEl:".left-btn"},direction:"horizontal",slidesPerView:1,breakpoints:{768:{slidesPerView:2,spaceBetween:16},1440:{slidesPerView:4,spaceBetween:16}}})}catch(o){p.textContent="NOT FOUND",console.log(o)}}g();h.init();
+</li>`).join("");p.insertAdjacentHTML("beforeend",e);const u=new i(".review-swiper",{watchOverflow:!0,keyboard:!0,navigation:{nextEl:".right-btn",prevEl:".left-btn"},direction:"horizontal",slidesPerView:1,breakpoints:{768:{slidesPerView:2,spaceBetween:16},1440:{slidesPerView:4,spaceBetween:16}}})}catch(o){p.textContent="NOT FOUND",console.log(o)}}g();h.init();
 //# sourceMappingURL=commonHelpers.js.map
