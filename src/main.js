@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
+import './js/scroll-to-top.js';
 import './js/header.js';
 import './js/hero.js';
 import './js/covers.js';
