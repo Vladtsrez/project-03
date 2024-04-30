@@ -60,7 +60,7 @@ window.onresize = function () {
         mousewheel: true,
         keyboard: true,
       });
-    } else if (screen.width < 1400) {
+    } else if (screen.width < 1440) {
       let swiper = new Swiper(sviperHtml, {
         navigation: {
           nextEl: swiperButtonNext,

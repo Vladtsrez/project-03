@@ -7,25 +7,30 @@
 /* first section */
 
 
+.about-me-conteiner {
+    padding-top: 64px !important ;
+    padding-bottom: 32px !important;
 
+
+}
+ 
 
 .section-about-me {
-    margin-top: 64px !important;
+    display: flex;
     flex-direction: column;
-    width: 343px;
-    margin: auto;
-    padding:0 16px;
     background-color: transparent;
+    justify-content: center;
 }
 
-.about-me-intro{
-    text-transform: uppercase ;
+.about-me-intro {
+    text-transform: uppercase;
     padding: 32px 32px 272px;
-    font-weight: 500;
-    margin: auto;
+    font-weight: 600;
+    margin: 0 auto;
     background-color: #242527;
     border-radius: 24px;
-    
+    width: 343px;
+    font-size: 22px;
 }
 .about-word-function{
     color: var(--color-text-functional);
@@ -42,9 +47,8 @@
 }
 
 @media (min-width: 768px) {
-    .section-about-me{
-        width: 704px;
-    }
+
+
     .img-about-me {
         width: 704px;
     }
@@ -52,13 +56,15 @@
         font-size: 38px;
         padding: 64px 64px 436px;
         line-height:40px;
+        width: 704px;
     }
 }
 
 @media (min-width: 1440px) {
-        .section-about-me {
-                width: 1374px;
-
+        .about-me-conteiner {
+                padding-top: 64px;
+                padding-bottom: 32px;
+                max-width: 100%;
             }
         .my-losung{
                 display: flex;
@@ -91,6 +97,7 @@
 .accordion-container-about-me .ac.is-active .ac-header .ac-trigger::after,
 .ac-about-me .ac-header .ac-trigger::after {
     content: none;
+ 
 }
 
 
@@ -145,6 +152,8 @@
 .section-about-me .ac-trigger,
 .section-about-me .accordion-container{
     background-color: transparent;
+    width: 343px;
+    margin: 0 auto;
 
 }
 .section-about-me .ac{
@@ -162,12 +171,31 @@
 .accordion-container .ac.is-active{
     border: none
 }
+@media (min-width: 768px) {
+    .section-about-me .ac,
+        .section-about-me .ac-header,
+        .section-about-me .ac-trigger,
+        .section-about-me .accordion-container {
+            width: 680px;
+}
+}
+@media (min-width: 1440px) {
+    .section-about-me .ac,
+        .section-about-me .ac-header,
+        .section-about-me .ac-trigger,
+        .section-about-me .accordion-container {
+            width: 1380px;
+        }
+}
 
 
+/* 3тя секція */
 .slaider-div{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
+
 }
 .slaider-div .swiper-about-me {
     margin-left:0 ;
@@ -196,21 +224,23 @@
     border: 1px solid var(--color-text-websites);
  }
 
-.swiper-slide-about-me:nth-child(1n) {
-    background-color: #ED3B44;
-    
-    
+ .swiper-slide-about-me:nth-child(1n) {
+     background-color: #ED3B44;
 
-}
-.swiper-slide-about-me:nth-child( 2n),
-.swiper-slide-about-me:nth-child(3n),
-.swiper-slide-about-me:nth-child(4n),
-.swiper-slide-about-me:nth-child(5n),
-.swiper-slide-about-me:nth-child(6n)
- {
-    background-color:transparent;
-}
+
+
+ }
+
+ .swiper-slide-about-me:nth-child(2n),
+ .swiper-slide-about-me:nth-child(3n),
+ .swiper-slide-about-me:nth-child(4n),
+ .swiper-slide-about-me:nth-child(5n),
+ .swiper-slide-about-me:nth-child(6n) {
+     background-color: transparent;
+ }
+
 .long-arrow-right {
+
     display: block;
     position: relative;
     top: -13px;
@@ -237,6 +267,7 @@ transform: rotate(-45deg) translate(8px, 2px);
 }
 
 @media (min-width: 768px) {
+    
     .slaider-div .swiper-about-me {
 
             width: 600px;
@@ -267,7 +298,5 @@ transform: rotate(-45deg) translate(8px, 2px);
 @media (min-width: 1440px) {
     .slaider-div .swiper-about-me {
             width: 1200px;
-
-    
         }
 }
