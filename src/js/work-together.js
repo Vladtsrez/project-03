@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
       
       const jsonData = JSON.stringify(data);
       
-      const response = await fetch('https://portfolio-js.b.goit.study/api/request', {
+      const response = await fetch('https://portfolio-js.b.goit.study/api/requests', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
