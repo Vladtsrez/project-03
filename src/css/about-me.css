@@ -223,12 +223,9 @@
     border: 1px solid var(--color-text-websites);
  }
 
- .swiper-slide-about-me:nth-child(1n) {
-     background-color: #ED3B44;
-
-
-
- }
+ .swiper-wrapper-about-me .swiper-slide-active {
+  background-color: #ED3B44;
+}
 
  .swiper-slide-about-me:nth-child(2n),
  .swiper-slide-about-me:nth-child(3n),

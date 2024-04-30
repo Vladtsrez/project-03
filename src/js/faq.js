@@ -3,7 +3,7 @@ import Accordion from 'accordion-js';
 const container = document.querySelector('.accordion-container');
 const accordion = new Accordion(container, {
   duration: 600,
-  showMultiple: true,
+  showMultiple: false,
   openOnInit: [],
   elementClass: 'ac',
   triggerClass: 'ac-trigger',
@@ -13,5 +13,4 @@ const accordion = new Accordion(container, {
   collapse: true,
   onlyChildNodes: true,
   openOnInit: [],
-  onOpen: currEl => console.log('Open!', currEl),
 });

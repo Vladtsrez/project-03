@@ -3,6 +3,9 @@ import axios from 'axios';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const review = document.querySelector('.reviews-list');
 
 async function fetchReviews() {
@@ -11,7 +14,6 @@ async function fetchReviews() {
     const response = await axios(url);
     return response.data;
   } catch (error) {
-    console.log(error);
     throw new Error('Failed to fetch reviews');
   }
 }
@@ -56,8 +58,10 @@ async function renderReviews() {
     });
   } catch (error) {
     review.textContent = 'NOT FOUND';
-    console.log(error);
-    // alert('NOT FOUND');
+    iziToast.warning({
+      title: 'Caution',
+      message: 'NOT FOUND ANY REVIEWS',
+    });
   }
 }
 
