@@ -1,5 +1,4 @@
 const scrollBtn = document.querySelector('.scroll-top');
-console.log(scrollBtn);
 
 window.addEventListener('scroll', function () {
   scrollBtn.classList.toggle('active', this.window.scrollY > 1000);
